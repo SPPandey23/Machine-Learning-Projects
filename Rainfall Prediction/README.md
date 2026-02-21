@@ -1,3 +1,4 @@
+
 <h1 align="center">🌧️ Rainfall Prediction in Australia</h1>
 <h3 align="center">End-to-End Machine Learning Pipeline with Streamlit Deployment</h3>
 
@@ -215,3 +216,91 @@ rainfall-prediction/
 <p align="center">
 ⭐ If you found this project useful, consider giving it a star.
 </p>
+=======
+# 🌧️ Rainfall Prediction in Australia: Productionized ML Pipeline
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Latest-orange.svg)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)](https://streamlit.io/)
+
+A professional, end-to-end machine learning solution designed to predict rainfall in Australia. This project demonstrates a transition from experimental research (Jupyter Notebooks) to a modular, production-ready architecture with an interactive dashboard.
+
+---
+
+## 🚀 Project Overview
+
+The core objective is to predict whether it will rain tomorrow in specific Australian regions based on a diverse set of meteorological parameters (temperature, humidity, pressure, wind speed, etc.). This repository showcases the full lifecycle of a data science project, including:
+
+*   **Exploratory Data Analysis (EDA)** and visualization.
+*   **Robust Preprocessing Pipelines** using Scikit-Learn transformers.
+*   **Model Engineering** featuring Random Forest and Logistic Regression.
+*   **Production Deployment** via a Streamlit web application.
+
+## 🛠️ Key Technical Features
+
+*   **Modular Architecture**: Clean separation of concerns between data ingestion, model training, and inference.
+*   **Scikit-Learn Pipelines**: Integrated handling of missing values, scaling, and categorical encoding ensuring no data leakage.
+*   **Feature Engineering**: Custom transformers for seasonal trend analysis and regional specificities.
+*   **Interactive Dashboard**: Real-time prediction interface with probability scoring.
+
+## 📁 Repository Structure
+
+```tree
+.
+├── app.py                  # Main Streamlit application
+├── src/                    # Core modular logic
+│   ├── data_loader.py      # Reliable data ingestion and cleaning
+│   ├── model.py            # Model definition and pipeline architecture
+│   ├── train.py            # Automated training script
+│   └── utils.py            # Technical helper functions
+├── FinalProject_AUSWeather.ipynb # EDA and model experimentation
+├── model.joblib            # Serialized production model artifact
+├── requirements.txt        # Reproducible environment configuration
+└── README.md               # Documentation
+```
+
+## 🧪 Machine Learning Workflow
+
+### 1. Preprocessing & Engineering
+- **Encoding**: One-Hot Encoding for categorical meteorological data (Wind Direction, Location).
+- **Scaling**: Standardisation of continuous variables for model stability.
+- **Handling Imbalance**: Analysis performed on class distributions to ensure model fairness.
+
+### 2. Modeling
+The system utilizes a **Random Forest Classifier** as its primary engine, chosen for its robustness against outliers and ability to capture complex non-linear relationships in weather patterns.
+
+## 🚦 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- pip
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/[your-username]/Rainfall-Prediction.git
+   cd Rainfall-Prediction
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Project
+- **Launch the App**:
+  ```bash
+  streamlit run app.py
+  ```
+- **Retrain the Model**:
+  ```bash
+  python src/train.py
+  ```
+
+## 📊 Results Summary
+- **Primary Model**: Random Forest
+- **Key Metrics**: High AUC-ROC and F1-Score on the 'Rainy' class, ensuring reliable warnings for potential precipitation.
+
+---
+
+## 👨‍💻 Developer Focus
+This project highlights professional standards in Machine Learning operations (MLOps), focusing on code reusability, modularity, and deployment readiness—
